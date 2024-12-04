@@ -28,17 +28,6 @@
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-3.3.6" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="actioncable (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailbox (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionmailer (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionpack (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actiontext (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="actionview (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activejob (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemodel (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activerecord (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activestorage (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activesupport (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.8.7, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ast (v2.4.2, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="base64 (v0.2.0, RVM: ruby-3.3.6) [gem]" level="application" />
@@ -103,10 +92,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.0.0, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.1.0, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rackup (v2.2.1, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rails (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-dom-testing (v2.2.0, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.6.1, RVM: ruby-3.3.6) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="railties (v8.1.0.alpha@035485, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rainbow (v3.1.1, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.2.1, RVM: ruby-3.3.6) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.8.1, RVM: ruby-3.3.6) [gem]" level="application" />
