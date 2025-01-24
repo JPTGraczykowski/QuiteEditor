@@ -23,7 +23,10 @@ class LineItemDatesController < ApplicationController
 
   def update
     if @line_item_date.update(line_item_dates_params)
-      redirect_to @quote, notice: "Date was successfully updated"
+      respond_to do |format|
+        format.html { redirect_to @quote, notice: "Date was successfully updated" }
+        format.turbo_stream { flash.now[:notice] = "Date was successfully updated" }
+      end
     else
       render :edit, status: :unprocessable_entity
     end
@@ -32,7 +35,10 @@ class LineItemDatesController < ApplicationController
   def destroy
     @line_item_date.destroy
 
-    redirect_to @quote, notice: "Date was successfully destroyed"
+    respond_to do |format|
+      format.html { redirect_to @quote, notice: "Date was successfully destroyed" }
+      format.turbo_stream { flash.now[:notice] = "Date was successfully destroyed" }
+    end
   end
 
   private

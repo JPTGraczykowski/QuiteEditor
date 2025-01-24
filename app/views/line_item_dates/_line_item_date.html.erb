@@ -13,6 +13,7 @@
                       class: "btn btn--light" %>
         <%= link_to "Edit",
                     [:edit, quote, line_item_date],
+                    data: { turbo_frame: dom_id(line_item_date) },
                     class: "btn btn--light" %>
       </div>
     </div>
