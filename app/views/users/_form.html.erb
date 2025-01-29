@@ -1,0 +1,9 @@
+<%= simple_form_for user, html: { method: :patch, class: "user form" } do |f| %>
+  <%= form_error_notification(user) %>
+
+  <%= f.input :email, required: true, autofocus: true %>
+  <%= f.input :password, placeholder: t("simple_form.placeholders.user.edit_password") %>
+  <%= f.input :current_password %>
+
+  <%= f.submit class: "btn btn--secondary" %>
+<% end %>

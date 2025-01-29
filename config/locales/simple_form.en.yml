@@ -11,6 +11,9 @@ en:
       user:
         email: Provide your e-mail
         password: Provide your password
+        edit_password: New password. Leave blank if not changing
+        password_confirmation: "Confirm new password"
+        current_password: "Provide your current password"
     labels:
       quote:
         name: Name
@@ -24,6 +27,8 @@ en:
       user:
         email: E-mail
         password: Password
+        password_confirmation: "Confirm New Password"
+        current_password: "Current Password"
 
   helpers:
     submit:
@@ -38,3 +43,4 @@ en:
         update: Update item
       user:
         create: Sign in
+        update: Update profile

@@ -3,9 +3,10 @@
     <div class="navbar__brand">
       <%= current_company.name %>
     </div>
-    <div class="navbar__name">
-      <%= current_user.name %>
-    </div>
+    <%= link_to current_user.name,
+                edit_user_path(current_user),
+                data: { turbo_frame: "user_profile_modal" },
+                class: "btn btn--light navbar__name" %>
     <%= button_to "Sign out",
                   destroy_user_session_path,
                   method: :delete,
