@@ -1,0 +1,14 @@
+
+<%= simple_form_for resource,
+                    as: resource_name,
+                    url: session_path(resource_name),
+                    html: { class: "form login" } do |f| %>
+  <h2>Sign in</h2>
+
+  <%= f.input :email, input_html: { autofocus: true } %>
+  <%= f.input :password, input_html: { autofocus: "off" } %>
+
+  <div class="login__actions">
+    <%= f.submit class: "btn btn--secondary" %>
+  </div>
+<% end %>
