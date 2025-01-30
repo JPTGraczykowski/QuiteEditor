@@ -24,5 +24,10 @@
       <%= render "layouts/flash" %>
     </div>
     <%= yield %>
+    <div class="modal" tabindex="-1">
+      <div class="modal__dialog">
+        <%= turbo_frame_tag "modal" %>
+      </div>
+    </div>
   </body>
 </html>

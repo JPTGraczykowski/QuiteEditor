@@ -5,7 +5,7 @@
     </div>
     <%= link_to current_user.name,
                 edit_user_path(current_user),
-                data: { turbo_frame: "user_profile_modal" },
+                data: { turbo_frame: "modal" },
                 class: "btn btn--light navbar__name" %>
     <%= button_to "Sign out",
                   destroy_user_session_path,
