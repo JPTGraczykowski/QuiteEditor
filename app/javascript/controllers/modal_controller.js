@@ -28,11 +28,11 @@ export default class extends Controller {
   submitUserProfile(event) {
     if (event.detail.success) {
       this.close()
-      this.redirectWhenSignedOut()
+      this._redirectWhenSignedOut()
     }
   }
 
-  redirectWhenSignedOut() {
+  _redirectWhenSignedOut() {
     fetch("/api/current_user", { headers: { Accept: "application/json" } })
     .then(response => response.json())
     .then(data => {
