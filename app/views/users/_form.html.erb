@@ -1,15 +1,27 @@
-<%= simple_form_for user, html: { method: :patch, class: "user form" } do |f| %>
-  <div class="modal__header">
-    <h1 class="modal-title">
-      Edit User's Profile
-    </h1>
-    <button class="modal-close">&times;</button>
-  </h1>
-  <div class="modal__body">
-    <%= f.input :email, required: true, autofocus: true %>
-    <%= f.input :password, placeholder: t("simple_form.placeholders.user.edit_password") %>
-    <%= f.input :current_password %>
+<div class="modal">
+  <div class="modal__dialog">
+    <div class="modal__header">
+      <h1 class="modal-title">
+        Edit User's Profile
+      </h1>
+      <button class="modal-close" data-action="modal#close">&times;</button>
+    </div>
+    <%= simple_form_for user,
+                        html: { method: :patch, class: "form user" },
+                        defaults: { input_html: { class: "user__input" } } do |f| %>
+
+      <%= form_error_notification(user) %>
+
+      <div class="modal__body">
+        <%= f.input :email, required: true, autofocus: true %>
+        <%= f.input :password, placeholder: t("simple_form.placeholders.user.edit_password") %>
+        <%= f.input :current_password %>
+      </div>
+
+      <div class="modal__footer">
+        <%= f.submit class: "btn btn--secondary", data: { action: "modal#close" } %>
+      </div>
+
+    <% end %>
   </div>
-  <div class="modal-footer">
-  <%= f.submit class: "btn btn--secondary" %>
-<% end %>
+</div>
