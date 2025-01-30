@@ -11,4 +11,8 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:edit, :update]
+
+  namespace :api do
+    get "/current_user", to: "sessions#current"
+  end
 end

@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     if current_user.update_with_password(user_params)
       respond_to do |format|
         format.html { redirect_to quotes_path, notice: "User's profile has been updated." }
+        format.turbo_stream { flash.now[:notice] = "User's profile has been updated." }
       end
     else
       render :edit, status: :unprocessable_entity

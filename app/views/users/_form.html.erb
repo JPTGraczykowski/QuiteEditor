@@ -8,6 +8,7 @@
     </div>
     <%= simple_form_for user,
                         html: { method: :patch, class: "form user" },
+                        data: { action: "turbo:submit-end->modal#submitUserProfile" },
                         defaults: { input_html: { class: "user__input" } } do |f| %>
 
       <%= form_error_notification(user) %>
@@ -19,7 +20,7 @@
       </div>
 
       <div class="modal__footer">
-        <%= f.submit class: "btn btn--secondary", data: { action: "modal#close" } %>
+        <%= f.submit class: "btn btn--secondary" %>
       </div>
 
     <% end %>
