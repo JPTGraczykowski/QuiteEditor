@@ -11,19 +11,35 @@ export default class extends Controller {
       this.close()
     }
   }
+
+  closeWithKeyboard(event) {
+    if (event.code == "Escape") {
+      this.close()
+    }
+  }
+
+  closeBackground(event) {
+    if (event && this.element !== event.target) {
+      return
+    }
+    this.close()
+  }
   
   submitUserProfile(event) {
     if (event.detail.success) {
       this.close()
-
-      fetch("/api/current_user", { headers: { Accept: "application/json" } })
-        .then(response => response.json())
-        .then(data => {
-          if (!data.signed_in) {
-            window.location.href = "/users/sign_in"
-          }
-        })
-        .catch(error => console.error("Error checking user:", error));
+      this.redirectWhenSignedOut()
     }
+  }
+
+  redirectWhenSignedOut() {
+    fetch("/api/current_user", { headers: { Accept: "application/json" } })
+    .then(response => response.json())
+    .then(data => {
+      if (!data.signed_in) {
+        window.location.href = "/users/sign_in"
+      }
+    })
+    .catch(error => console.error("Error checking user:", error));
   }
 }
